@@ -29,7 +29,7 @@ def recommend(type, country, city , property ,starrating,  user_id= None):
      # Append user preferences to the filtered DataFrame
 
     if temp.empty: #an empty list is returned if no hotels matches the criteria
-        return []
+        return pd.DataFrame()
 
     # Create a DataFrame from user tags
     user_tags_df = pd.DataFrame({'tags': [user_tags]})
