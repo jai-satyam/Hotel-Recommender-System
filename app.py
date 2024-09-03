@@ -65,7 +65,7 @@ st.header(":rainbow[Enter your preference as per your choice]")
 
 room_type = st.selectbox(
 'Roomtype(The kind of room you want)',
-('Single bed' , 'double bed' , 'Suite')
+df['roomtype'].unique()
 )
 
 country = st.selectbox(" Select Country", df['country'].unique())
